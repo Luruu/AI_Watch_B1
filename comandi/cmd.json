@@ -1,0 +1,32 @@
+{
+    "targetActorSelection": "/system/sharding/connection",
+    "headers": {
+    	"aggregate": false
+    },
+    "piggybackCommand": {
+        "type": "connectivity.commands:modifyConnection",
+        "connection": {
+            "id": "kafka-connection-source",
+            "connectionType": "kafka",
+            "connectionStatus": "open",
+            "failoverEnabled": true,
+            "uri": "tcp://192.168.160.195:9092",
+            "specificConfig":{
+           "bootstrapServers":"192.168.160.195:9092"
+             },
+            "sources": [{
+                "addresses": ["t1","t2", "t3"],
+                "authorizationContext": ["nginx:ditto"],
+                "qos": 0,
+                "payloadMapping": ["Ditto"],
+                "filters": [],
+                "replyTarget": {
+                    "enabled": true,
+                    "address": "topic_ditto_reply",
+                    "headerMapping": {},
+                    "expectedResponseTypes": ["response", "error", "nack"]
+                  }
+            }]
+        }
+    }
+}

@@ -1,0 +1,6 @@
+[2022-06-30 12:19:23,838] INFO [GroupCoordinator 0]: Member rdkafka-1effb1ee-6c0e-44b2-b970-aa16cab5e21c in group 1 has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2022-06-30 12:19:23,839] INFO [GroupCoordinator 0]: Preparing to rebalance group 1 in state PreparingRebalance with old generation 11 (__consumer_offsets-49) (reason: removing member rdkafka-1effb1ee-6c0e-44b2-b970-aa16cab5e21c on heartbeat expiration) (kafka.coordinator.group.GroupCoordinator)
+[2022-06-30 12:19:23,839] INFO [GroupCoordinator 0]: Group 1 with generation 12 is now empty (__consumer_offsets-49) (kafka.coordinator.group.GroupCoordinator)
+[2022-06-30 12:22:31,772] INFO [GroupCoordinator 0]: Preparing to rebalance group 1 in state PreparingRebalance with old generation 12 (__consumer_offsets-49) (reason: Adding new member rdkafka-9d9ab5e8-280d-4e9a-9c26-e224a8da3241 with group instance id None) (kafka.coordinator.group.GroupCoordinator)
+[2022-06-30 12:22:31,772] INFO [GroupCoordinator 0]: Stabilized group 1 generation 13 (__consumer_offsets-49) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-06-30 12:22:31,773] INFO [GroupCoordinator 0]: Assignment received from leader for group 1 for generation 13. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)

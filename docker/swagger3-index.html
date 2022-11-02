@@ -1,0 +1,89 @@
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eclipse Ditto - HTTP API</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./swagger-ui.css" >
+    <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./images/favicon-96x96.png" sizes="96x96" />
+    <style>
+        html
+        {
+            box-sizing: border-box;
+            overflow: -moz-scrollbars-vertical;
+            overflow-y: scroll;
+        }
+        *,
+        *:before,
+        *:after
+        {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin:0;
+            background: #fafafa;
+        }
+
+        #swagger-ui .swagger-ui.swagger-container .topbar {
+        }
+
+        #swagger-ui .swagger-ui.swagger-container .topbar .topbar-wrapper a {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="swagger-ui"></div>
+
+<script src="./swagger-ui-bundle.js"> </script>
+<script src="./swagger-ui-standalone-preset.js"> </script>
+<script>
+    window.onload = function() {
+
+        const ui = SwaggerUIBundle({
+                                       urls: [
+                                           {url: "/apidoc/openapi/ditto-api-2.yml", name:"Ditto API v2"}
+                                       ],
+                                       "urls.primaryName": "Ditto API v2",
+                                       validatorUrl: null,
+                                       docExpansion: "none",
+                                       dom_id: '#swagger-ui',
+                                       deepLinking: true,
+                                       presets: [
+                                           SwaggerUIBundle.presets.apis,
+                                           SwaggerUIStandalonePreset
+                                       ],
+                                       plugins: [
+                                           SwaggerUIBundle.plugins.DownloadUrl
+                                       ],
+                                       layout: "StandaloneLayout",
+                                       oauth2RedirectUrl: window.location.origin + "/apidoc/oauth2-redirect.html",
+                                       onComplete: function () {
+                                           ui.preauthorizeBasic("NginxBasic", "ditto", "ditto");
+                                       }
+                                   });
+
+        ui.initOAuth({
+                         clientId: "853201765597-7nmcpg90krhogd9375dl44sse4tup0gj.apps.googleusercontent.com",
+                         clientSecret: "<leave that empty>",
+                         realm: "eclipse-ditto",
+                         appName: "Eclipse Ditto :: Sandbox",
+                         scopeSeparator: " ",
+                         scopes: "openid",
+                         additionalQueryStringParams: {
+                         }
+                     });
+
+        window.ui = ui;
+    }
+</script>
+</body>
+
+</html>
+

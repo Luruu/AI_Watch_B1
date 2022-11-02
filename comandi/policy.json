@@ -1,0 +1,49 @@
+{
+    "policyId": "aiwatch:laboratorio-corridoio_dt",
+    "entries": {
+        "owner": {
+            "subjects": {
+                "nginx:ditto": { "type": "camera utente" }
+            },
+            "resources": {
+                "thing:/": {
+                    "grant": ["READ","WRITE"],
+                    "revoke": []
+                },
+                "policy:/": {
+                    "grant": ["READ","WRITE"],
+                    "revoke": []
+                },
+                "message:/": {
+                    "grant": ["READ","WRITE"],
+                    "revoke": []
+                }
+            }
+        },
+        "observer": {
+            "subjects": {
+                "ditto:observer": {
+                    "type": "l'observer è l'utente che 'osserva' 
+                    le modifiche. E' utilizzato per la connessione target"
+                }
+            },
+            "resources": {
+                "thing:/features": {
+                    "grant": ["READ"],
+                    "revoke": []
+                },
+                "policy:/": {
+                    "grant": ["READ"],
+                    "revoke": []
+                },
+                "message:/": {
+                    "grant": ["READ"],
+                    "revoke": []
+                }
+            }
+        }
+    }
+}
+
+
+

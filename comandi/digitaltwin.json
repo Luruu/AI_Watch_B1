@@ -1,0 +1,29 @@
+
+
+{
+    "definition": "digitaltwin:Laboratorio_Corridoio:1",
+    "policyId": "aiwatch:laboratorio-corridoio_dt",
+    "attributes": {
+      "Responsabile_lab": "Francesco Camastra",
+      "Vice-Responsabile_lab": "Alessio Ferone",
+      "N_computer_lab": 12,
+      "N_finestre_lab": 2,
+      "N_finestre_corr": 1,
+      "N_porte-prof_corridoio": 6
+    },
+    "features": {
+     "coordinates": {
+       "properties": {
+         "x": 0, 
+         "y": 0,
+         "z": 0,
+         "x_rotation": 0,
+         "y_rotation": 0,
+         "w_rotation": 0,
+         "z_rotation": 0
+        }
+      }
+    }
+}
+
+

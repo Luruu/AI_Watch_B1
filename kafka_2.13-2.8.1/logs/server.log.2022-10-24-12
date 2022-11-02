@@ -1,0 +1,7 @@
+[2022-10-24 12:00:08,329] INFO [GroupCoordinator 0]: Member rdkafka-5814dc88-3391-4805-831d-7275affc0807 in group anomaly_detector_group has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2022-10-24 12:00:08,337] INFO [GroupCoordinator 0]: Stabilized group anomaly_detector_group generation 3 (__consumer_offsets-16) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-10-24 12:00:08,338] INFO [GroupCoordinator 0]: Assignment received from leader for group anomaly_detector_group for generation 3. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2022-10-24 12:14:26,028] INFO [GroupCoordinator 0]: Preparing to rebalance group consumer-group- in state PreparingRebalance with old generation 1 (__consumer_offsets-15) (reason: Adding new member rdkafka-313d3c38-ca42-42d1-b94a-f5b4c4a1c896 with group instance id None) (kafka.coordinator.group.GroupCoordinator)
+[2022-10-24 12:15:03,486] INFO [GroupCoordinator 0]: Member rdkafka-f36b7663-5bbb-4835-a068-45532ad25296 in group consumer-group- has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2022-10-24 12:15:03,488] INFO [GroupCoordinator 0]: Stabilized group consumer-group- generation 2 (__consumer_offsets-15) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2022-10-24 12:15:03,491] INFO [GroupCoordinator 0]: Assignment received from leader for group consumer-group- for generation 2. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)

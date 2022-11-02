@@ -1,0 +1,5 @@
+confluent_kafka==1.8.2
+numpy==1.23.0
+pysad==0.1.1
+PyNomaly==0.3.3
+combo==0.1.3

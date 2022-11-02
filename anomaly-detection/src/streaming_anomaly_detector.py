@@ -1,7 +1,7 @@
 '''
-Questo programma è il programma che si occupa di rigirare il messaggio dalle camere a unity 
-e di dire a unity se una determinata coordinata (x,y,z,x_rotation, etc..) se è anomala o meno.
-Al momento, finché non si hanno le telecamere, è utilizzato insieme ad un programma che simula l'invio delle coordinate in tempo reale (si trova in streaming-simulation/simulation_camere.py)
+                STREAMING ANOMALY DETECTOR
+Questo programma si occupa di rilevare le eventuali anomalie dalle coordinate ricevute da Eclipse Ditto in seguito all'invio delle coordinate da parte del tracker.
+Il software suddivide in tre thread: il consumer kafka (che consuma i dati inviati Ditto), il thead "pynomaly_loop" e il thread producer kafka (che produce i dati verso Unity).
 '''
 
 import kafka
@@ -12,16 +12,8 @@ from output import output
 import threading
 from queue import Queue
 
-# ------------------------------------------------------------------------ SCRIVERE LE GUIDE !!!! -----------------------------------------------
-#
-#
-#
-#
-#
-#
+
 def main():
-    #semaphore_consumer_ad = threading.Semaphore(0) #sincronizzazione  tra consumer e anomaly detection
-    #semaphore_ad_producer = threading.Semaphore(0) #sincronizzazione tra anomaly detection thread e producer
     
     n_partitions = 3
     replica = 1
@@ -75,7 +67,7 @@ def main():
     task_producer.start()
 
     
-    input("[ PRESS ENTER TO EXIT AT ANY TIME (and save output) ] \n")
+    input("[ PRESS ENTER TO EXIT AT ANY TIME (and save anomaly detection output) ] \n")
     output_class.save_output() #le coordinate sono aggiunte al dizionario da un metodo richiamato all'interno del metodo do_detection della classe anomaly_detection 
     print("[main]: closing..")
     

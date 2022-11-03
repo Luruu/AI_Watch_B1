@@ -1,1 +1,1 @@
-## Eclipse Ditto and Apache Kafka :: Docker
+# SETUP ECLIPSE DITTO AND APACHE KAFKA

@@ -26,15 +26,17 @@ Anomaly result values shown in the video:
 </p>
 
 
-## Docs 📜
-- AI Watch B1 documentation was generated using [Doxygen](https://doxygen.nl/)
-
 ## System Structure 🏛
 <p>
     <div align="center">
         <img src="AI%20WATCH%20Architecture/architettura_di_comunicazione.png">
     </div>
 </p>
+
+
+## Docs 📜
+- AI Watch B1 documentation was generated using [Doxygen](https://doxygen.nl/)
+
 
 
 ## Installation 🚀

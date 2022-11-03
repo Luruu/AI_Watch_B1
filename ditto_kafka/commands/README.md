@@ -1,5 +1,7 @@
 # Comandi principali per docker
 
+#DA MODIFICARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 https://github.com/eclipse/ditto/blob/master/deployment/docker/README.md 
 docker-compose up -d   //crea e avvia i container
 docker-compose logs -f //vedi logs

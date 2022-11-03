@@ -2,15 +2,6 @@
 
 # DA MODIFICARE COMPLETAMENTE!!!!! 02-11-2022!
 
-# DTProject
-
-
-# Macchina utilizzata
-iMac (Retina 5K, 27-inch, 2020)
-macOS Monterey 12.0.1 (21A559)
-Processore 3,6 GHz Intel Core i9 10 core (nota: è possibile (ma non è certo) che ci siano problemi con m1)
-Memoria 32 GB 2667 MHz DDR4
-
 # SETUP 
 Questo modulo del progetto AIWATCH prevede i seguenti software: Docker, eclipse ditto, pysad, Apache kafka.
 
@@ -58,7 +49,5 @@ Ulteriori informazioni in merito sono reperibili qui: https://github.com/eclipse
 
 Fatto questo, il webserver (nginx) dovrebbe essere attivo (insieme ad altri servizi di docker) e dovresti poter visualizzare questa pagina in locale: http://localhost:8080/.
 
-Adesso è necessario creare le policy, i digital twins e le connessioni "source" e "target":
-# [DA CONTINUARE E VEDERE DOVE e COME SCRIVERE QUESTA ROBA.] da aggiungere anche immagini. 
 
 

@@ -41,10 +41,15 @@ Anomaly result values shown in the video:
 </p>
 
 ## Tools 🛠
+- [Eclipse Ditto](https://www.eclipse.org/ditto/)
 - [Kafka](https://kafka.apache.org/)
 - [Python Confluent Kafka library](https://github.com/confluentinc/confluent-kafka-python)
 - [Confluent](https://www.confluent.io/)
 - [Doxygen](https://doxygen.nl/)
+- [Docker](https://www.docker.com/)
+- [PySAD](https://pysad.readthedocs.io/en/latest/)
+- [PyNomaly](https://github.com/vc1492a/PyNomaly)
+
 
 
 

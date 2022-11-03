@@ -7,7 +7,7 @@
         </h3>
     </div>
     <div align="center">
-        <img src="images/eye_big_white@2x.png" width="400">
+        <img src="images/eye_big_white@2x.png" width="300">
     </div>
     
 </p>
@@ -18,8 +18,13 @@
 
 https://user-images.githubusercontent.com/31493347/199800246-85cfb2e8-0283-4eac-b568-9901ea64f1b0.mp4
 
+Anomaly result values shown in the video:
+<p>
+    <div align="center">
+        <img src="images/grafico%20anomalie.PNG", width="600">
+    </div>
+</p>
 
- 
 
 ## Docs 📜
 - AI Watch B1 documentation was generated using [Doxygen](https://doxygen.nl/)
@@ -31,7 +36,7 @@ https://user-images.githubusercontent.com/31493347/199800246-85cfb2e8-0283-4eac-
 ## System Structure 🏛
 <p>
     <div align="center">
-        <img src="https://github.com/Luruu/AI_Watch_B1/blob/main/AI%20WATCH%20Architecture/architettura_di_comunicazione.png">
+        <img src="AI%20WATCH%20Architecture/architettura_di_comunicazione.png">
     </div>
 </p>
 

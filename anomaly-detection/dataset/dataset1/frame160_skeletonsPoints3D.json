@@ -1,0 +1,288 @@
+{
+	"ID_Frame" : 160,
+	"thingId": "digitaltwin:Laboratorio_Corridoio:1", 
+	"People" : 
+	[
+		{
+			"personID" : 0,
+			"skeleton" : 
+			[
+				{
+					"confidence" : 0.0,
+					"pointID" : 0,
+					"w_rotation" : 1.0,
+					"x" : 0.0,
+					"x_rotation" : 0.0,
+					"y" : 0.0,
+					"y_rotation" : 0.0,
+					"z" : 0.0,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.86959600448608398,
+					"pointID" : 1,
+					"w_rotation" : 1.0,
+					"x" : -29.701000213623047,
+					"x_rotation" : 0.0,
+					"y" : 1.3119765520095825,
+					"y_rotation" : 0.0,
+					"z" : -1.3495194911956787,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.81694698333740234,
+					"pointID" : 2,
+					"w_rotation" : 1.0,
+					"x" : -29.762001037597656,
+					"x_rotation" : 0.0,
+					"y" : 1.2997943162918091,
+					"y_rotation" : 0.0,
+					"z" : -1.2261903285980225,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.8682129979133606,
+					"pointID" : 3,
+					"w_rotation" : 1.0,
+					"x" : -29.73699951171875,
+					"x_rotation" : 0.0,
+					"y" : 1.0683940649032593,
+					"y_rotation" : 0.0,
+					"z" : -1.1960551738739014,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.81577301025390625,
+					"pointID" : 4,
+					"w_rotation" : 1.0,
+					"x" : -29.660999298095703,
+					"x_rotation" : 0.0,
+					"y" : 0.89197874069213867,
+					"y_rotation" : 0.0,
+					"z" : -1.2949278354644775,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.85762101411819458,
+					"pointID" : 5,
+					"w_rotation" : 1.0,
+					"x" : -29.677000045776367,
+					"x_rotation" : 0.0,
+					"y" : 1.3266736268997192,
+					"y_rotation" : 0.0,
+					"z" : -1.4706325531005859,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.87739497423171997,
+					"pointID" : 6,
+					"w_rotation" : 1.0,
+					"x" : -29.63599967956543,
+					"x_rotation" : 0.0,
+					"y" : 1.08586585521698,
+					"y_rotation" : 0.0,
+					"z" : -1.4717326164245605,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.78974497318267822,
+					"pointID" : 7,
+					"w_rotation" : 1.0,
+					"x" : -29.681999206542969,
+					"x_rotation" : 0.0,
+					"y" : 0.92734074592590332,
+					"y_rotation" : 0.0,
+					"z" : -1.3395953178405762,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.66533398628234863,
+					"pointID" : 8,
+					"w_rotation" : 1.0,
+					"x" : -29.631999969482422,
+					"x_rotation" : 0.0,
+					"y" : 0.82678723335266113,
+					"y_rotation" : 0.0,
+					"z" : -1.3482019901275635,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.60452097654342651,
+					"pointID" : 9,
+					"w_rotation" : 1.0,
+					"x" : -29.701000213623047,
+					"x_rotation" : 0.0,
+					"y" : 0.81825149059295654,
+					"y_rotation" : 0.0,
+					"z" : -1.2787623405456543,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.69356602430343628,
+					"pointID" : 10,
+					"w_rotation" : 1.0,
+					"x" : -29.757999420166016,
+					"x_rotation" : 0.0,
+					"y" : 0.42019280791282654,
+					"y_rotation" : 0.0,
+					"z" : -1.3257977962493896,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.59972900152206421,
+					"pointID" : 11,
+					"w_rotation" : 1.0,
+					"x" : -29.697000503540039,
+					"x_rotation" : 0.0,
+					"y" : 0.043766289949417114,
+					"y_rotation" : 0.0,
+					"z" : -1.3581070899963379,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.58634400367736816,
+					"pointID" : 12,
+					"w_rotation" : 1.0,
+					"x" : -29.660999298095703,
+					"x_rotation" : 0.0,
+					"y" : 0.83034563064575195,
+					"y_rotation" : 0.0,
+					"z" : -1.4311463832855225,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.77532899379730225,
+					"pointID" : 13,
+					"w_rotation" : 1.0,
+					"x" : -29.729000091552734,
+					"x_rotation" : 0.0,
+					"y" : 0.47292676568031311,
+					"y_rotation" : 0.0,
+					"z" : -1.5063414573669434,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.750419020652771,
+					"pointID" : 14,
+					"w_rotation" : 1.0,
+					"x" : -29.66200065612793,
+					"x_rotation" : 0.0,
+					"y" : 0.071153253316879272,
+					"y_rotation" : 0.0,
+					"z" : -1.4979321956634521,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.0,
+					"pointID" : 15,
+					"w_rotation" : 1.0,
+					"x" : 0.0,
+					"x_rotation" : 0.0,
+					"y" : 0.0,
+					"y_rotation" : 0.0,
+					"z" : 0.0,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.0,
+					"pointID" : 16,
+					"w_rotation" : 1.0,
+					"x" : 0.0,
+					"x_rotation" : 0.0,
+					"y" : 0.0,
+					"y_rotation" : 0.0,
+					"z" : 0.0,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.86702299118041992,
+					"pointID" : 17,
+					"w_rotation" : 1.0,
+					"x" : -29.791000366210938,
+					"x_rotation" : 0.0,
+					"y" : 1.4882317781448364,
+					"y_rotation" : 0.0,
+					"z" : -1.2906990051269531,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.83107197284698486,
+					"pointID" : 18,
+					"w_rotation" : 1.0,
+					"x" : -29.826999664306641,
+					"x_rotation" : 0.0,
+					"y" : 1.530626654624939,
+					"y_rotation" : 0.0,
+					"z" : -1.4099469184875488,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.67590397596359253,
+					"pointID" : 19,
+					"w_rotation" : 1.0,
+					"x" : -29.861000061035156,
+					"x_rotation" : 0.0,
+					"y" : 0.0,
+					"y_rotation" : 0.0,
+					"z" : -1.5921649932861328,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.68996798992156982,
+					"pointID" : 20,
+					"w_rotation" : 1.0,
+					"x" : -29.797000885009766,
+					"x_rotation" : 0.0,
+					"y" : 0.0,
+					"y_rotation" : 0.0,
+					"z" : -1.5762379169464111,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.64449101686477661,
+					"pointID" : 21,
+					"w_rotation" : 1.0,
+					"x" : -29.64900016784668,
+					"x_rotation" : 0.0,
+					"y" : 0.033360153436660767,
+					"y_rotation" : 0.0,
+					"z" : -1.4732344150543213,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.0,
+					"pointID" : 22,
+					"w_rotation" : 1.0,
+					"x" : 0.0,
+					"x_rotation" : 0.0,
+					"y" : 0.0,
+					"y_rotation" : 0.0,
+					"z" : 0.0,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.0,
+					"pointID" : 23,
+					"w_rotation" : 1.0,
+					"x" : 0.0,
+					"x_rotation" : 0.0,
+					"y" : 0.0,
+					"y_rotation" : 0.0,
+					"z" : 0.0,
+					"z_rotation" : 0.0
+				},
+				{
+					"confidence" : 0.0,
+					"pointID" : 24,
+					"w_rotation" : 1.0,
+					"x" : 0.0,
+					"x_rotation" : 0.0,
+					"y" : 0.0,
+					"y_rotation" : 0.0,
+					"z" : 0.0,
+					"z_rotation" : 0.0
+				}
+			]
+		}
+	]
+}

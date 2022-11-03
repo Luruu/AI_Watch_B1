@@ -10,9 +10,9 @@
             "connectionType": "kafka",
             "connectionStatus": "open",
             "failoverEnabled": true,
-            "uri": "tcp://192.168.160.195:9092",
+            "uri": "tcp://192.168.160.195:29092",
             "specificConfig":{
-           "bootstrapServers":"192.168.160.195:9092"
+           "bootstrapServers":"192.168.160.195:29092"
              },
             "targets": [{
                 "address": "topic_ditto",

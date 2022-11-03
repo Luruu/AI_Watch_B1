@@ -1,26 +1,5 @@
 
-/* ---------OLD (dati ottenuti dall'ambiente virtuale)
-function mapToDittoProtocolMsg(headers, textPayload, bytePayload, contentType) {
-    const jsonString = String.fromCharCode.apply(null, new Uint8Array(bytePayload));
-    const jsonData = JSON.parse(jsonString);
-    const thingId = jsonData.thingId.split(':');
-    const value = {
-        coordinates: {
-            properties: {
-                x: jsonData.x,
-                y: jsonData.y,
-                z: jsonData.z,
-                x_rotation: jsonData.x_rotation,
-                y_rotation: jsonData.y_rotation,
-                z_rotation: jsonData.z_rotation,
-                w_rotation: jsonData.w_rotation
-            }
-        }
-    };
-    return Ditto.buildDittoProtocolMsg(thingId[0], thingId[1], 'things', 'twin', 'commands', 'modify', '/features', headers, value);
-}
-*/
-
+// QUESTO FILE SERVE PER MOSTRARE LA FUNZIONE IN MODO LEGGIBILE. 
 function mapToDittoProtocolMsg(headers, textPayload, bytePayload, contentType) {
     const jsonString = String.fromCharCode.apply(null, new Uint8Array(bytePayload));
     const jsonData = JSON.parse(jsonString);

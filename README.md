@@ -54,7 +54,7 @@ AI Watch B1 is licensed under the Apache License, Version 2.0. Copyright 2022. P
 
 
 ## Contacts 🪪
-- [mail] luca.rubino001 [ at ] students [ dot ] uniparthenope [ dot] it
+- [mail] luca [ at ] rubino001 [ at ] students [ dot ] uniparthenope [ dot] it
 
 
 ## Citation 📖

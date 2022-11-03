@@ -45,16 +45,16 @@ class pynomaly_loop():
 
 
     #add anomaly value in the msg to produce.
-    def setmsg_and_output_detection(self,queue_coords_anomaly, outputClass, anomaly_score, msg_dict, detection_val):
+    def setmsg_and_output_detection(self,queue_coords_anomaly, output_class, anomaly_score, msg_dict, detection_val):
         msg_dict["People"][0]["skeleton"][8]["anomaly"] = detection_val
         
         queue_coords_anomaly.put(json.dumps(msg_dict))
         msg_dict["People"][0]["skeleton"][8]["anomaly_score"] = anomaly_score 
-        outputClass.coordinates.append(msg_dict)
+        output_class.coordinates.append(msg_dict)
 
     
     
-    def do_detection(self,queue_coords, queue_coords_anomaly, outputClass, path_initialtraining):
+    def do_detection(self,queue_coords, queue_coords_anomaly, output_class, path_initialtraining):
         if self.model == None:
             self.dataset_initialtraining_path = path_initialtraining
             self.set_model_initial_training()
@@ -62,7 +62,7 @@ class pynomaly_loop():
         print("[[READY]] --- [AnomalyDetector]: ready to detect     "  + threading.current_thread().name)
         while True:
             msg_dict = json.loads(queue_coords.get())
-            pointID8 = msg_dict["People"][0]["skeleton"][8]
+            pointID8 = msg_dict["People"][0]["skeleton"][8] # ottava giuntura della persona con ID 0 
             coordinates_array = np.array([pointID8["x"], pointID8["y"], pointID8["z"]
                      #   ,msg_dict["x_rotation"], msg_dict["y_rotation"], msg_dict["z_rotation"], msg_dict["w_rotation"]
                                        ])
@@ -70,7 +70,7 @@ class pynomaly_loop():
             anomaly_score = self.model.fit_score_partial(coordinates_array)                                                    
       
             anomaly_value = self.check_value_anomaly(anomaly_score=anomaly_score) # True = anomaly        False = normal
-            self.setmsg_and_output_detection(queue_coords_anomaly = queue_coords_anomaly, outputClass = outputClass, 
+            self.setmsg_and_output_detection(queue_coords_anomaly = queue_coords_anomaly, output_class = output_class, 
                                              anomaly_score = anomaly_score, msg_dict=msg_dict,detection_val=anomaly_value)
             
             print("[AnomalyDetector] Person 0, point 8!!: frame:", msg_dict["ID_Frame"], "x:" , pointID8["x"], "y:" , pointID8["y"], "z:" , pointID8["z"] 

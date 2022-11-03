@@ -1,4 +1,4 @@
-# NOVEMBRE 2022
+# Queste sono alcune cose che penso che bisogna fare quanto prima
 
 # 1) Salvare lo stato del modello dopo l'addestramento
 

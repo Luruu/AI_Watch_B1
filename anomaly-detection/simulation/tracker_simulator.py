@@ -14,7 +14,6 @@ class producer_simul_coords():
     def delivery_report(self, errmsg, msg):
         if errmsg is not None:
             print("[producer]: Delivery failed for Message: {} : {}".format(msg.key(), errmsg))
-            return
         
         #print('[producer]: Message: {} successfully produced to Topic: {} Partition: [{}] at offset {}'.format( DA DECOMMENTAREEEE EE E E EE EE EE E E E  EE 
        #     msg.value(), msg.topic(), msg.partition(), msg.offset()))
@@ -63,7 +62,7 @@ class producer_simul_coords():
             self.client_producer.flush()
             i+=1        
 
-    def simulate_produce_ONEFRAME(self, topic_to_produce,  directory, frame):
+    def simulate_produce_oneframe(self, topic_to_produce,  directory, frame):
             
             js = json.load(open(directory + frame))
             
@@ -86,7 +85,7 @@ def main():
     topic_to_produce = "topic1"
     dataset_simulation_path = "../dataset/simulation1/"
     
-    #prod.simulate_produce_ONEFRAME(topic_to_produce,dataset_simulation_path, "frame160_skeletonsPoints3D.json")  # A scopo di test, qui invio soltanto il frame 160.
+    #prod.simulate_produce_oneframe(topic_to_produce,dataset_simulation_path, "frame160_skeletonsPoints3D.json")  # A scopo di test, qui invio soltanto il frame 160.
     prod.simulate_produce_streamingdata(topic_to_produce,dataset_simulation_path) 
 
 if __name__ == "__main__":

@@ -1,3 +1,7 @@
+'''         OUTPUT CLASS
+Questa classe ha l'obiettivo di salvare in maniera persisente l'output del modulo di streaming anomaly detection.
+'''
+
 import json
 
 class output():

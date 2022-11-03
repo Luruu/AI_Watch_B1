@@ -1,28 +1,23 @@
+''' CSV TOOL
+#questo tool è utile per creare file csv in modo da poterne successivamente creare dei grafici da visualizzare a video.
+'''
+
 import csv
 import json  
 
 import matplotlib.pyplot as plt
 import csv
   
-eader = ['x','y']
 jsondict = json.load(open("output.json"))
 
-#questo tool è utile per creare file csv in modo da poterne successivamente creare dei grafici da visualizzare.
 with open('file.csv', 'w', encoding='UTF8') as f:
     writer = csv.writer(f)
-            
-    # write the header
-   # writer.writerow(header)
-
+    
     i = 1
     for c in jsondict["coordinates"]:
         writer.writerow([i, c["anomaly_score"]])
-        i = i +1
-            
+        i = i + 1
 
-
-x = []
-y = []
 
 x = []
 y = []

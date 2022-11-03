@@ -6,7 +6,7 @@ Il software suddivide in tre thread: il consumer kafka (che consuma i dati invia
 
 import kafka
 from pynomaly_loop import pynomaly_loop
-#from message import message
+
 from output import output
 
 import threading

@@ -1,0 +1,37 @@
+{
+    "targetActorSelection": "/system/sharding/connection",
+    "headers": {},
+    "piggybackCommand": {
+        "type": "connectivity.commands:createConnection",
+        "connection": {
+            "id": "kafka-connection-target",
+            "connectionType": "kafka",
+            "connectionStatus": "open",
+            "failoverEnabled": true,
+            "uri": "tcp://192.168.160.195:29092",
+            "specificConfig":{
+           "bootstrapServers":"192.168.160.195:29092"
+             },
+            "targets": [{
+                "address": "topic_ditto",
+                "topics": [
+                    "_/_/things/twin/events",
+                    "_/_/things/live/messages"
+                ],
+                "authorizationContext": ["ditto:observer"],
+                "qos": 0
+            }],
+            "mappingContext": {
+                "mappingEngine": "JavaScript",
+                "options": {
+                    "incomingScript": "function mapToDittoProtocolMsg(headers, textPayload, bytePayload, contentType) {return null;}",
+                    "outgoingScript": "function mapFromDittoProtocolMsg(namespace, id, group, channel, criterion, action, path, dittoHeaders, value, status, extra) {    let jsonPayload = value.coordinates.properties;    let textPayload = JSON.stringify(jsonPayload);    let bytePayload = null;    let contentType = 'text/plain; charset=UTF-8';    return Ditto.buildExternalMsg(dittoHeaders, textPayload, bytePayload, contentType);}",
+                    "loadBytebufferJS": "false",
+                    "loadLongJS": "false"
+                }
+            }
+        }
+    }
+}
+
+

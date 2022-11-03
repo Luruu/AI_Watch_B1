@@ -1,0 +1,41 @@
+
+{
+    "targetActorSelection": "/system/sharding/connection",
+    "headers": { },
+    "piggybackCommand": {
+        "type": "connectivity.commands:createConnection",
+        "connection": {
+            "id": "kafka-connection-source",
+            "connectionType": "kafka",
+            "connectionStatus": "open",
+            "failoverEnabled": true,
+            "uri": "tcp://192.168.160.195:29092",
+            "specificConfig":{
+                    "bootstrapServers":"192.168.160.195:29092"
+            },
+            "sources": [{
+                "addresses": ["topic1","topic2", "topic3"],
+                "authorizationContext": ["nginx:ditto"],
+                "qos": 0,
+                "filters": [],
+                "replyTarget": {
+                    "enabled": true,
+                    "address": "topic_ditto_reply",
+                    "expectedResponseTypes": ["response", "error", "nack"]
+                  }
+            }],
+            "mappingContext": {
+                "mappingEngine": "JavaScript",
+                "options": {
+                    "incomingScript": "function mapToDittoProtocolMsg(headers, textPayload, bytePayload, contentType) {    const jsonString = String.fromCharCode.apply(null, new Uint8Array(bytePayload));    const jsonData = JSON.parse(jsonString);    const thingId = jsonData.thingId.split(':');    const value = {        coordinates: {            properties: {            }        }    };    Object.assign(value['coordinates'][['properties']], jsonData);    return Ditto.buildDittoProtocolMsg(thingId[0], thingId[1], 'things', 'twin', 'commands', 'modify', '/features', headers, value);}",
+                    "outgoingScript": "function mapFromDittoProtocolMsg(namespace, id, group, channel, criterion, action, path, dittoHeaders, value, status, extra) {return null;}",
+                    "loadBytebufferJS": "false",
+                    "loadLongJS": "false"
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -84,10 +84,10 @@ def main():
     prod = producer_simul_coords(config=config_producer)
 
     topic_to_produce = "topic1"
-    dataset_simulation_path = "../dataset/dataset1/"
+    dataset_simulation_path = "../dataset/simulation1/"
     
     #prod.simulate_produce_ONEFRAME(topic_to_produce,dataset_simulation_path, "frame160_skeletonsPoints3D.json")  # A scopo di test, qui invio soltanto il frame 160.
-    prod.simulate_produce_streamingdata(topic_to_produce,dataset_simulation_path) # decommentare e cambiare cartella di dataset_simulation_path per inviare un intero dataset.
+    prod.simulate_produce_streamingdata(topic_to_produce,dataset_simulation_path) 
 
 if __name__ == "__main__":
     main()

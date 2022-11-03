@@ -12,6 +12,7 @@ version: '2.4'
 
 services:
 
+
 # KAFKA SERVICES 
   zookeeper:
     image: confluentinc/cp-zookeeper:latest

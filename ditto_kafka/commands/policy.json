@@ -1,9 +1,9 @@
 {
-    "policyId": "aiwatch:laboratorio-corridoio_dt",
+    "policyId": "aiwatch:policy",
     "entries": {
         "owner": {
             "subjects": {
-                "nginx:ditto": { "type": "camera utente" }
+                "nginx:ditto": { "type": "who sends data to digital twin (pattern observer)" }
             },
             "resources": {
                 "thing:/": {
@@ -23,8 +23,7 @@
         "observer": {
             "subjects": {
                 "ditto:observer": {
-                    "type": "l'observer è l'utente che 'osserva' 
-                    le modifiche. E' utilizzato per la connessione target"
+                    "type": "who reads data from digital twin (pattern observer)"
                 }
             },
             "resources": {

@@ -1,5 +1,3 @@
-
-
 {
     "targetActorSelection": "/system/sharding/connection",
     "headers": {},
@@ -29,7 +27,7 @@
                     "incomingScript": "function mapToDittoProtocolMsg(headers, textPayload, bytePayload, contentType) {return null;}",
                     "outgoingScript": "function mapFromDittoProtocolMsg(namespace, id, group, channel, criterion, action, path, dittoHeaders, value, status, extra) {    let jsonPayload = value.coordinates.properties;    let textPayload = JSON.stringify(jsonPayload);    let bytePayload = null;    let contentType = 'text/plain; charset=UTF-8';    return Ditto.buildExternalMsg(dittoHeaders, textPayload, bytePayload, contentType);}",
                     "loadBytebufferJS": "false",
-                     "loadLongJS": "false"
+                    "loadLongJS": "false"
                 }
             }
         }

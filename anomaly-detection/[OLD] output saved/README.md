@@ -1,0 +1,1 @@
+# In questa cartella sono presenti dei test effettuati con le vecchie coordinate (queste erano generate direttamente dall'ambiente virtuale). 

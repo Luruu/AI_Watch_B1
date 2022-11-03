@@ -40,7 +40,17 @@ Anomaly result values shown in the video:
 
 
 ## Installation 🚀
-- To-do
+this AiWatch module includes two main software: Eclipse Ditto (implementation of Digital Twin) and Streaming Anomaly Detector, so the installation and setup is divided into two parts to be followed in the following order:
+1. [SETUP/RUN Apache Kafka and Eclipse Ditto](https://github.com/Luruu/AI_Watch_B1/blob/main/ditto_kafka/README.md#setup-eclipse-ditto-and-apache-kafka)
+2. [SETUP/RUN Streaming Anomaly Detector](https://github.com/Luruu/AI_Watch_B1/blob/main/anomaly-detection/README.md#setup-streaming-anomaly-detector)
+
+The system was mainly used on the following hardware:
+<p>
+    <div align="center">
+        <img src="images/infomac.png", width="600">
+    </div>
+</p>
+But a test was also carried out correctly on ubuntu 20.4 LTS. <b>Instead I do not recommend using Mac computers with M1 processor for the first test<b>.
 
 
 ## Tools 🛠
@@ -50,8 +60,10 @@ Anomaly result values shown in the video:
 - [Confluent](https://www.confluent.io/)
 - [Doxygen](https://doxygen.nl/)
 - [Docker](https://www.docker.com/)
+- [Docker-Compose](https://docs.docker.com/compose/)
 - [PySAD](https://pysad.readthedocs.io/en/latest/)
 - [PyNomaly](https://github.com/vc1492a/PyNomaly)
+
 
 
 

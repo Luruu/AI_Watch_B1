@@ -54,7 +54,7 @@ AI Watch B1 is licensed under the Apache License, Version 2.0. Copyright 2022. P
 
 
 ## Contacts 🪪
-- [mail] luca [ at ] rubino001 [ at ] students [ dot ] uniparthenope [ dot] it
+- [mail] luca [ dot ] rubino001 [ at ] students [ dot ] uniparthenope [ dot] it
 
 
 ## Citation 📖
@@ -71,6 +71,9 @@ AI Watch B1 is licensed under the Apache License, Version 2.0. Copyright 2022. P
 - [Dr. Alessio Ferone](https://www.researchgate.net/profile/Alessio-Ferone), CS Assistant Professor at the [University of Naples Parthenope](https://www.uniparthenope.it/).
 
 
+## Other modules
+- [A1 - Tracker] https://github.com/dennewbie/AI_Watch_A1
+- [C1 - Unity3D] ...
 
 a.a. 2021/2022
 

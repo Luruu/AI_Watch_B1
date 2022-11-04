@@ -1,4 +1,4 @@
-# Comandi principali per docker
+# SETUP ECLIPSE DITTO FOR AIWATCH PROJECT
 
 # DA MODIFICARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

@@ -40,7 +40,7 @@ Now the containers have been created and are running, but if you want to stop or
 - If you only use Docker-compose: the containers are always active and when the computer starts up automatically if they have not been turned off or if there are no problems.
 - If you are using Docker-desktop: open docker-desktop and the containers will start automatically.
 
-## IS ECLIPSE DITTO RUNNING?
+## Is ECLIPSE DITTO Running?
 Open following URL: [http://localhost:8080](http://localhost:8080)<br/>
 <p>
     <div align="center">
@@ -49,12 +49,24 @@ Open following URL: [http://localhost:8080](http://localhost:8080)<br/>
 </p>
 If you can see welcome message of Eclipse Ditto, you started Eclipse Ditto correctly.
 
-## Is APACHE Kafka Running? 
-If Ditto is working correctly then it is very likely that kafka is working too. But, if you want to be sure, then you need to create a kafka topic and use a consumer and a producer to test. To do this you can directly follow the following steps (the first steps are not necessary to perform as apache kafka is already running):
-1. [create a topic] (https://kafka.apache.org/quickstart#quickstart_createtopic).
-3. [start and use a producer entity] (https://kafka.apache.org/quickstart#quickstart_send)
-2. [start a consumer entity] (https://kafka.apache.org/quickstart#quickstart_consume)
+## Is APACHE KAFKA Running? 
+If Ditto is working correctly then it is very likely that kafka is working too. But, if you want to be sure, then you need to create a kafka topic and use a consumer and a producer to test. To do this you can directly follow the following steps:
 
-**WHICH PORT USE APACHE KAFKA IN AIWATCH PROJECT?: The port used by Kafka for the other services is port ```29092```, so you so you don't have to use the default port which is shown in the apache kafka official site tutorial!**
+- RUN KAFKA CONSUMER ISTANCE
+1. open a new terminal
+2. show running containers and copy **kafka container id**: ```bash sudo docker ps``` .
+3. use sh to use kafka container:  ```docker exec -it <<PUT HERE KAFKA CONTAINER ID COPIED BEFORE** sh``` .
+4. run a **kafka consumer istance**: ```kafka-console-consumer --bootstrap-server <PUT_YOUR_IP (NOT LOCALHOST or 127.0.0.1)!!>:29092 --topic topic1```
+don't worry about warnings/error: you created topic1 implicitly.
+
+- RUN KAFKA PRODUCER ISTANCE
+1. open a new terminal
+2. show running containers and copy **kafka container id**: ```bash sudo docker ps``` .
+3. use sh to use kafka container:  ```docker exec -it <<PUT HERE KAFKA CONTAINER ID COPIED BEFORE** sh``` .
+4. run a **kafka consumer istance**: ```kafka-console-producer --bootstrap-server <PUT_YOUR_IP (NOT LOCALHOST or 127.0.0.1)!!>:29092 --topic topic1```
+
+
+## WHICH PORT USE APACHE KAFKA IN AIWATCH PROJECT?
+The port used by Kafka for the other services is port ```29092```, so you so you don't have to use the default port which is shown in the apache kafka official site tutorial!!
 
 

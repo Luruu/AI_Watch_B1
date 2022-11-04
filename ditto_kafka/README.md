@@ -74,7 +74,7 @@ don't worry about warnings/error: you created topic1 implicitly.
 ```bash 
 docker exec -it <PUT HERE KAFKA CONTAINER ID COPIED BEFORE> sh
 ``` 
-4. run a **kafka consumer istance**: 
+4. run a **kafka producer istance**: 
 ```bash 
 kafka-console-producer --bootstrap-server <PUT_YOUR_IP (NOT LOCALHOST or 127.0.0.1)>:29092 --topic topic1
 ```

@@ -66,7 +66,7 @@ docker exec -it <PUT HERE KAFKA CONTAINER ID> sh
 ```bash 
 kafka-console-consumer --bootstrap-server <PUT_YOUR_IP (NOT LOCALHOST or 127.0.0.1)>:29092 --topic topic1
 ```
-don't worry about warnings/error: you created topic1 implicitly.
+don't worry about warnings/error: you created topic1 implicitly. 
 
 - RUN KAFKA PRODUCER ISTANCE
 1. open a new terminal
@@ -79,6 +79,7 @@ docker exec -it <PUT HERE KAFKA CONTAINER ID COPIED BEFORE> sh
 kafka-console-producer --bootstrap-server <PUT_YOUR_IP (NOT LOCALHOST or 127.0.0.1)>:29092 --topic topic1
 ```
 
+Write a message in this terminal (hit enter of course). If you can see the message in the terminal where the consumer instance is running, then apache kafka is working fine.
 
 ## WHICH PORT USE APACHE KAFKA IN AIWATCH PROJECT?
 The port used by Kafka for the other services is port ```29092```, so you so you don't have to use the default port which is shown in the apache kafka official site tutorial!!

@@ -20,7 +20,7 @@ This module uses:
 
  
 ## SETUP (Ditto and Kafka)
-1. Download and install Docker Desktop or Docker-Compose (docker desktop contains docker compose) [following this instructions](https://docs.docker.com/compose/install/).
+1. Download and install Docker Desktop or Docker-Compose (docker desktop contains docker compose) [following these instructions](https://docs.docker.com/compose/install/).
 2. Clone this repository locally, go in `AI_Watch_B1` directory and use this following command: 
 ```bash
 cd ditto_kafka/docker/

@@ -41,9 +41,10 @@ Anomaly result values shown in the video:
 
 ## Installation 🚀
 this AiWatch module includes two main software: Eclipse Ditto (implementation of Digital Twin) and Streaming Anomaly Detector, so the installation and setup is divided into two parts to be followed in the following order:
-1. [SETUP/RUN Apache Kafka and Eclipse Ditto](https://github.com/Luruu/AI_Watch_B1/blob/main/ditto_kafka/README.md#setup-eclipse-ditto-and-apache-kafka)
-2. [SETUP ECLIPSE DITTO FOR AIWATCH PROJECT](https://github.com/Luruu/AI_Watch_B1/blob/main/ditto_kafka/commands/README.md#setup-eclipse-ditto-for-aiwatch-project)
-3. [SETUP/RUN Streaming Anomaly Detector](https://github.com/Luruu/AI_Watch_B1/blob/main/anomaly-detection/README.md#setup-streaming-anomaly-detector)
+***
+1. **[SETUP/RUN Apache Kafka and Eclipse Ditto](https://github.com/Luruu/AI_Watch_B1/blob/main/ditto_kafka/README.md#setup-eclipse-ditto-and-apache-kafka)** and **[SETUP ECLIPSE DITTO FOR AIWATCH PROJECT](https://github.com/Luruu/AI_Watch_B1/blob/main/ditto_kafka/commands/README.md#setup-eclipse-ditto-for-aiwatch-project)**
+3. **[SETUP/RUN Streaming Anomaly Detector](https://github.com/Luruu/AI_Watch_B1/blob/main/anomaly-detection/README.md#setup-streaming-anomaly-detector)**
+***
 
 The system was mainly used on the following hardware:
 <p>
@@ -75,7 +76,7 @@ AI Watch B1 is licensed under the Apache License, Version 2.0. Copyright 2022. P
 
 
 ## Contacts 🪪
-- [mail] luca [ dot ] rubino001 [ at ] studenti [ dot ] uniparthenope [ dot] it
+- [mail] luca [ dot ] rubino001 [ at ] studenti [ dot ] uniparthenope [ dot] it (you can write to me in english or italian).
 
 
 ## Citation 📖

@@ -3,7 +3,7 @@
 function mapToDittoProtocolMsg(headers, textPayload, bytePayload, contentType) {
     const jsonString = String.fromCharCode.apply(null, new Uint8Array(bytePayload));
     const jsonData = JSON.parse(jsonString);
-    const thingId = jsonData.thingId.split(':'); //da controllare se il json è vuoto o non ha i campi che ci si aspetta (altrimenti appaiono errori nel topic topic_ditto_reply ovviamente)
+    const thingId = jsonData.thingId.split(':'); 
     const value = {
         coordinates: {
             properties: {

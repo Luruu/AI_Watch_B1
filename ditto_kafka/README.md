@@ -54,15 +54,15 @@ If Ditto is working correctly then it is very likely that kafka is working too. 
 
 - RUN KAFKA CONSUMER ISTANCE
 1. open a new terminal
-2. show running containers and copy **kafka container id**: ```bash sudo docker ps``` .
-3. use sh to use kafka container:  ```docker exec -it <<PUT HERE KAFKA CONTAINER ID COPIED BEFORE** sh``` .
+2. show running containers and copy **kafka container id**: ```bash sudo docker ps``` 
+3. use sh to use kafka container:  ```docker exec -it <<PUT HERE KAFKA CONTAINER ID COPIED BEFORE** sh``` 
 4. run a **kafka consumer istance**: ```kafka-console-consumer --bootstrap-server <PUT_YOUR_IP (NOT LOCALHOST or 127.0.0.1)!!>:29092 --topic topic1```
 don't worry about warnings/error: you created topic1 implicitly.
 
 - RUN KAFKA PRODUCER ISTANCE
 1. open a new terminal
-2. show running containers and copy **kafka container id**: ```bash sudo docker ps``` .
-3. use sh to use kafka container:  ```docker exec -it <<PUT HERE KAFKA CONTAINER ID COPIED BEFORE** sh``` .
+2. show running containers and copy **kafka container id**: ```bash sudo docker ps``` 
+3. use sh to use kafka container:  ```docker exec -it <<PUT HERE KAFKA CONTAINER ID COPIED BEFORE** sh``` 
 4. run a **kafka consumer istance**: ```kafka-console-producer --bootstrap-server <PUT_YOUR_IP (NOT LOCALHOST or 127.0.0.1)!!>:29092 --topic topic1```
 
 

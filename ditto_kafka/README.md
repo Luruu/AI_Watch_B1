@@ -37,7 +37,7 @@ Now the containers have been created and are running, but if you want to stop or
 
 
 ## RUN Eclipse Ditto and Apache Kafka containers
-- If you only use Docker-compose: the containers are always active and when the computer starts up automatically if they have not been turned off or if there are no problems.
+- If you only use Docker-compose: the containers are running. When the computer starts up automatically if they have not been turned off or if there are no problems.
 - If you are using Docker-desktop: open docker-desktop and the containers will start automatically.
 
 ## Is ECLIPSE DITTO Running?

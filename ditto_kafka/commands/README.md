@@ -1,16 +1,6 @@
 # SETUP ECLIPSE DITTO FOR AIWATCH PROJECT
 
-# DA MODIFICARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-https://github.com/eclipse/ditto/blob/master/deployment/docker/README.md 
-docker-compose up -d   //crea e avvia i container
-docker-compose logs -f //vedi logs
-docker-compose down //cancella i container e stoppandoli
-
-Altri comandi : https://docs.docker.com/compose/reference/
-
-
-# COMANDI principali per configurare Ditto da utilizzare in ordine: 
+# COMANDI principali per configurare Ditto da utilizzare in ordine:   DA MODIFICARE!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 curl -X PUT 'http://localhost:8080/api/2/policies/aiwatch:policy' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @policy.json

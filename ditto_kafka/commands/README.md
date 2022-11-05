@@ -13,7 +13,7 @@ Altri comandi : https://docs.docker.com/compose/reference/
 # COMANDI principali per configurare Ditto da utilizzare in ordine: 
 
 
-curl -X PUT 'http://localhost:8080/api/2/policies/aiwatch:laboratorio-corridoio_dt' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @policy.json
+curl -X PUT 'http://localhost:8080/api/2/policies/aiwatch:policy' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @policy.json
 
 curl -X PUT 'http://localhost:8080/api/2/things/digitaltwin:Laboratorio_Corridoio' -u 'ditto:ditto' -H 'Content-Type: application/json' -d @digitaltwin.json
 

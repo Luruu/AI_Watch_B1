@@ -21,7 +21,7 @@ curl -X PUT 'http://localhost:8080/api/2/things/digitaltwin:Laboratorio_Corridoi
 ```bash
 curl -X POST 'http://localhost:8080/devops/piggyback/connectivity?timeout=10' -u 'devops:foobar' -H 'Content-Type: application/json' -d @create_connectionSource.json
 ```
-5. Create a new kafka connection target from user "ditto:observer" (Software streaming anomaly detector)
+5. Create a new kafka connection target to user "ditto:observer" (Software streaming anomaly detector)
 ```bash
 curl -X POST 'http://localhost:8080/devops/piggyback/connectivity?timeout=10' -u 'devops:foobar' -H 'Content-Type: application/json' -d @create_connectionTarget.json
 ```

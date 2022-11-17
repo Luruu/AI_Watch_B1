@@ -76,7 +76,7 @@ AI Watch B1 is licensed under the Apache License, Version 2.0. Copyright 2022. P
 
 
 ## Contacts 🪪
-- [mail] luca [ dot ] rubino001 [ at ] studenti [ dot ] uniparthenope [ dot] it (you can write to me in english or italian).
+- [mail] luca [ dot ] rubino001 [ at ] studenti [ dot ] uniparthenope [ dot ] it (you can write to me in english or italian).
 
 
 ## Citation 📖
@@ -94,8 +94,8 @@ AI Watch B1 is licensed under the Apache License, Version 2.0. Copyright 2022. P
 
 
 ## Other modules
-- [A1 - Tracker] https://github.com/dennewbie/AI_Watch_A1
-- [C1 - Unity3D] https://github.com/RenatoEsposito1999/AIWatch
+- [A1 - Tracker](https://github.com/dennewbie/AI_Watch_A1)
+- [C1 - Unity3D](https://github.com/RenatoEsposito1999/AIWatch)
 
 a.a. 2021/2022
 
